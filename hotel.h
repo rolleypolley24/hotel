@@ -1,22 +1,38 @@
 #ifndef HOTEL_H
 #define HOTEL_H
 
-#include<iostream>
-#include <string>
 #include "room.h"
 #include "reservation.h"
+#include "userAuthentication.h"
+#include <vector>
 
 class Hotel {
-    private:
+public:
+    Hotel();
+
+    // Room management
+    void addRoom(const Room& room);
+    void removeRoom(int roomNumber);
+    void findRoom(int roomNumber);
+    int getNumberOfRooms();
+    std::string getRoomType(int roomNumber);
+    const Room* findRoom(int roomNumber) const; // Const version
+
+    
+
+    // Reservation management
+    void makeReservation(int roomNumber);
+    void cancelReservation(int reservationId);
+    const std::vector<Room>& getRooms() const;
+    
+
+private:
+    // initiation of vectors of Room and Reservation instances
     std::vector<Room> rooms;
     std::vector<Reservation> reservations;
+    
 
-    public:
-    Hotel();
-    void make_reservation(int reservation_id, int check_in, int check_out);
-    void check_availability(int roomNumber, int check_in, int check_out);
-    void remove_reservation(std::string name, int number, int roomNumber);
-
+    
 };
 
-#endif
+#endif 

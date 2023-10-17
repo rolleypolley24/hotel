@@ -1,18 +1,27 @@
 #ifndef ROOM_H
 #define ROOM_H
-#include<iostream>
-#include <string.h>
+#include <iostream>
+#include <string>
 
 class Room {
+public:
+    Room(int roomNumber, const std::string& roomType, double price, bool availability);
+
+    int getRoomNumber() const;
+    std::string getRoomType() const;
+    double getPrice() const;
+    
+    bool getRoomAvailability() const;
+    void setRoomAvailability(bool request);
+
+    virtual void displayRoomInfo() const;
+
+    
 private:
-    int room_number;
-    std::string room_type;
+    int roomNumber;
+    std::string roomType;
     double price;
     bool availability;
-
-public:
-    Room(int number, const std::string& type, double cost);
 };
-
 
 #endif
