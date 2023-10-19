@@ -1,0 +1,198 @@
+Input and Output Testing (Hotel Booking System)
+
+// Testing Case 1 (Succesful login and reservation)
+
+Input: aaron, 123, 1, 1, you
+
+Output: 
+
+---------------------
+Welcome to the Hotel!
+---------------------
+Please enter your username: Please enter your password:
+ 
+Login successful. Welcome, aaron!
+
+Menu Options:
+1. Make a Reservation
+2. Cancel a Reservation
+3. Check Room Availability
+4. Logout
+Please select an option by entering a number: Please enter the room number you'd like to reserve:
+ 
+Room 1 Details
+---------------
+Room Number: 1
+Room Type: Standard
+Price per Night: $100.00
+Availability: Available
+The Standard Room offers a comfortable stay with basic amenities, making it a perfect choice for travelers looking for an affordable and pleasant experience.
+---------------
+WE ALSO PROVIDE ADDITIONAL ROOM FEATURES
+TYPE 'add' TO VIEW:
+Would you like to confirm booking? (Y/N): 
+------------------------
+Room successfully booked.
+------------------------
+ 
+Menu Options:
+1. Make a Reservation
+2. Cancel a Reservation
+3. Check Room Availability
+4. Logout
+Please select an option by entering a number:
+
+
+.................................................................................................................................................
+
+Test Case 2 (Failed Login and denied reattempt to login)
+
+Input: abc, 224, n
+
+Expected Output: 
+
+---------------------
+Welcome to the Hotel!
+---------------------
+Please enter your username: 
+
+Please enter your password:
+ 
+Login failed. Please check your credentials and try again.
+Retry? (Y/N): Goodbye. Thank you for visiting the hotel!
+
+.................................................................................................................................................
+
+Test Case 3 (Checking availability for Standard Rooms)
+
+Input: lleyton, 123, 3, 2
+
+Expected Output: 
+
+---------------------
+Welcome to the Hotel!
+---------------------
+Please enter your username: Please enter your password:
+ 
+Login successful. Welcome, lleyton!
+
+Menu Options:
+1. Make a Reservation
+2. Cancel a Reservation
+3. Check Room Availability
+4. Logout
+Please select an option by entering a number: You have selected to check room availability
+1. Check all available Rooms
+2. Check available 'Standard' Rooms
+3. Check available 'Deluxe' Rooms
+4. Check available 'Suite' Rooms
+ 
+5. Back to main menu
+ 
+Please select an option: 
+Room Number: 1
+Room Type: Standard
+Price per Night: $100.00
+Availability: Available
+---------------------- 
+Room Number: 2
+Room Type: Standard
+Price per Night: $100.00
+Availability: Available
+---------------------- 
+Room Number: 3
+Room Type: Standard
+Price per Night: $100.00
+Availability: Available
+---------------------- 
+Room Number: 4
+Room Type: Standard
+Price per Night: $100.00
+Availability: Available
+---------------------- 
+Room Number: 5
+Room Type: Standard
+Price per Night: $100.00
+Availability: Available
+---------------------- 
+Menu Options:
+1. Make a Reservation
+2. Cancel a Reservation
+3. Check Room Availability
+4. Logout
+Please select an option by entering a number:
+
+.................................................................................................................................................
+
+Test Case 4 (Succesful reservation of room and successful cancelling of reservation of same room)
+
+Input: aaron, 123, 1, 1, Y, 2, 1
+
+Expected Output:
+
+
+---------------------
+Welcome to the Hotel!
+---------------------
+Please enter your username: Please enter your password:
+ 
+Login successful. Welcome, aaron!
+
+Menu Options:
+1. Make a Reservation
+2. Cancel a Reservation
+3. Check Room Availability
+4. Logout
+Please select an option by entering a number: Please enter the room number you'd like to reserve: 
+Room Number: 1
+Room Type: Standard
+Price per Night: $100.00
+Availability: Available
+---------------
+WE ALSO PROVIDE ADDITIONAL ROOM FEATURES
+TYPE 'add' TO VIEW: 
+Would you like to confirm booking? (Y/N): 
+-------------------------
+Added Features: None 
+------------------------
+Room successfully booked.
+------------------------
+Enjoy!
+
+Menu Options:
+1. Make a Reservation
+2. Cancel a Reservation
+3. Check Room Availability
+4. Logout
+Please select an option by entering a number: You have selected to cancel a reservation.
+Enter the room number you want to cancel: 
+
+The room with ID 1 successfully canceled.
+
+
+.................................................................................................................................................
+
+Test Case 5 (Correct username but wrong password, then denied reattempt)
+
+Input: aaron, incorrect11, N
+
+Expected Output: 
+
+---------------------
+Welcome to the Hotel!
+---------------------
+Please enter your username: Please enter your password:
+ 
+Login failed. Please check your credentials and try again.
+Retry? (Y/N): 
+Exiting the program.
+
+.................................................................................................................................................
+
+
+
+
+
+
+
+

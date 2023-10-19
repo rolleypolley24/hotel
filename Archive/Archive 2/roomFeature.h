@@ -15,4 +15,4 @@ private:
     double cost;
 };
 
-#endif 
+#endif // ROOMFEATURE_H
