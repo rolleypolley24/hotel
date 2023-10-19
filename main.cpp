@@ -105,8 +105,7 @@ int main() {
         
         // switch case to determine different inputes to seperate methods
        switch (choice) {
-    case 1: 
-    {
+    case 1:
         std::cout << "Please enter the room number you'd like to reserve: ";
         int roomNumber;
         std::cin >> roomNumber;
@@ -207,11 +206,9 @@ int main() {
                 continue;
             }
         }
-    }
     break;
 
     case 2: // Cancel a Reservation
-    {
         std::cout << "You have selected to cancel a reservation." << std::endl;
 
         // Prompt for the room number to cancel
@@ -225,10 +222,8 @@ int main() {
             customer.cancelReservation(reservationID);
             std::cout << "Reservation with ID " << reservationID << " has been canceled." << std::endl;
         }
-    }
     break;
     case 3: // Check room avaliability
-    {
         std::cout << "You have selected to check room avaliability" << std::endl;
         
         // gives user option to check all, or specific room avaliability.
@@ -291,8 +286,8 @@ int main() {
 
             
         }
+        break;
 
-    } 
     case 4: // Logout
         loggedIn = false;
         std::cout << "Logged out. Thank you for using the hotel booking system." << std::endl;
@@ -304,9 +299,8 @@ int main() {
                 std::cin.clear();
                 std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
           
-}    
-    }
-        
+}   
+    }   
 }
 return 0;
 }
